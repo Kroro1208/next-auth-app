@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: db
+    ports:
+      - "15432:5432" # localhost:15432をコンテナの5432にマッピング
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  mail:
+    image: mailhog/mailhog
+    platform: linux/x86_64
+    ports:
+      - "8025:8025" # メールUI用
+      - "1025:1025" # SMTPサーバー
+
+volumes:
+  pgdata:
