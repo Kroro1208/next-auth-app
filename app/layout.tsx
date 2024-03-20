@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { ImKey2 } from "react-icons/im";
-import { Separator } from "@radix-ui/react-separator";
+import { Separator } from "@/components/ui/separator";
 import { Toaster } from "@/components/ui/toaster";
 import { AuthContext } from "../contexts/AuthContext";
 import { ErrorToaster } from "@/components/common/ErrorToaster";
