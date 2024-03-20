@@ -24,14 +24,14 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={`${inter.className} p-1 h-screen2`}>
-        <div className="space-y-8 pb-8">
+        <div className="space-y-8 p-3">
           <div>
             <Link className="flex items-center space-x-1 text-2xl" href={"/"}>
               <ImKey2 />
               <h1 className="text-2xl font-bold text-gray-900">Next Auth Login System</h1>
             </Link>
           </div>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-gray-700 mx-auto text-center font-bold">
             Next.jsとNextAuthを使用したログインシステムの構築
           </p>
         </div>
