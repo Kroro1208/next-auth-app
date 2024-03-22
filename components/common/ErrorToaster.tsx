@@ -8,7 +8,7 @@ const errorMessages = {
 };
 
 export const ErrorToaster = () => {
-    const searchParams = useSearchParams();
+    const searchParams = useSearchParams(); // クエリパラメータにアクセスするため
     const error = searchParams.get("error");
     const { toast } = useToast();
 
