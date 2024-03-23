@@ -22,6 +22,6 @@ export const authOptions: NextAuthOptions = {
 };
 
 // サーバーサイドでCookieからSession情報を取得
-export const getAuthSession = async() => {
+export const getAuthSession = async () => {
   return getServerSession(authOptions);
 };
